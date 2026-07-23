@@ -1,8 +1,26 @@
 aid: ankyra-therapeutics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ankyra-therapeutics.png
 name: Ankyra Therapeutics
-description: 'Ankyra Therapeutics is a company surfaced as a portfolio company of gv and added to the
-  API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Ankyra Therapeutics is a clinical-stage biotechnology company based in Cambridge,
+  Massachusetts, developing "anchored" immunotherapies for cancer and immune-mediated diseases. Its
+  proprietary platform tethers immune-modulating drugs to aluminum hydroxide so that treatment
+  concentrates locally at the disease site, broadening the therapeutic window while reducing systemic
+  toxicity and dosing frequency. The lead candidate, ANK-101, is an anchored IL-12 therapy in clinical
+  evaluation for patients with advanced solid tumors. Ankyra is backed by investors including Google
+  Ventures (GV), Mithril, Polaris Partners, Sands Capital, and Fidelity. The company publishes no public
+  developer API, SDK, or technical platform; this profile exists in the API Evangelist network for
+  discovery and enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/ankyra-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Immunotherapy
+- Oncology
+- Cancer
+- Clinical Stage
+- Pharmaceuticals
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,23 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ankyra-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/ankyra-therapeutics-llms.txt
 - type: Website
-  url: http://ankyratx.com
+  url: https://ankyratx.com
+- type: Blog
+  name: News
+  url: https://ankyratx.com/news/
+- type: Careers
+  url: https://ankyratx.com/our-team/join-our-team/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ankyratx
+- type: Twitter
+  url: https://twitter.com/ankyratx
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
